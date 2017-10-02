@@ -1,0 +1,30 @@
+------------------------------ Problem with Traditional Waterfall approach ----------------------------
+
+Move on to next phase only when current phase is completely done.
+Deliever the complete software as 1 chunk.
+Feedback from users can be taken only when the complete development is completed
+and if they dont like anything or any other changes, it becomes all that diffucult to achieve.
+
+So if a software takes around 3 months of development and it was not accepted all the
+time is completly throw away.
+
+----------------------------- Basics of Agile --------------------------------------------
+
+Divide your delievery into smaller logical features and deliever and take feedback,
+as feedback on a live running system is much more meaningful and relevant than otherwise.
+Each smaller delievery is called 'Sprint' which is typically 2-3 weeks each.
+Above divide and conquer approach also helps to manage risks better, and gives you more
+chance if the requirement changes after feedback.
+
+
+
+------------------------------ Scrum Basics ----------------------------------------------
+Scrum can be defined as 'Get-together', where each participant on a team including 
+developers,Project Owner and other parties involve and discuss progress and challenges.
+This enables more transperency and accountability as each and every member of your team
+exactly knows what others are doing.
+
+Scrum Master : Normally a Tech Lead or Mentor takes this position and he drives the scrum call.
+
+Project Owner : He is normally like a business analyst who is hands on with the business requirement
+and moniters health of the project.

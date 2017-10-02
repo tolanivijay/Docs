@@ -1,0 +1,16 @@
+Apache Kafka can be understood as a distrubted messaging which should be used where the amount of data is humungoues 
+and is beyond the capacity of traditional messaging like queue or topic.
+
+If traditional messaging each queue or topic is hosted on a given server and the same server or broker takes all the load.
+If the amount of data is huge, the very same broker has to deal with all the producers and consumers.
+Clearly the above model does not allow for horizontal scaling and nothing much can be done if the load increases.
+
+The answer to above limitation is Apache kafka which can be considered as a distrubted messaging which we can scale
+horizontally (i.e. increasing new nodes as needed).
+
+
+Nodes, Partitions and Topics:
+1) Topic is the same concept that we have in traditional messaging i.e. if the same message has to be supplied to multiple consumers,
+   topic is used
+1) Node : Node can be termed as a physical server or box which is participating as a server
+2) Parti

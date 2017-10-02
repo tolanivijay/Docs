@@ -1,0 +1,78 @@
+Deutche:
+
+1)MV,updating views
+2)How can we use 2 stacks and convert into a queue
+3)nth highest marks
+4)clustered and non-clustered index
+5)class diagram for Decorator pattern
+6)Design principles
+7)CopyonWriteArrayList
+
+Amdocs written test:
+1) Write a program for ATM notes retrival system which takes of below
+   a) It always ensures the least number of notes disbursed based on amount
+   b) Handle concurrency
+   c) It sends information regarding the denomiation and no of notes(for e.g 500*1+100*2 = 700)
+   
+2) What is the use of version in Hibernate/JPA. Give example
+3) Given a connectionPool class ,extend the class to give info if there is any connectionLeak
+4) static method of collection which takes a Collection and returns a SyncCollection.How would u implement
+   such a thing ?
+   
+   
+Citi Telephonic
+
+1) How to avoid data race without locking ?
+2) How to programatically detect deadlock ?
+3) What is optimistic and passimistic locking ?
+4) Considering a Map of String vs Integer,where Integer is updated a good number of times,
+   how would u design to fetch best performance.
+
+-----------------------------------------------------------------------
+
+Numora (Round 1)
+
+1) Considering there can be n number of multiple requests on a servlet, will this not cause an issue ?
+    for e.g. 100000 simultaneous requests can cause issues,how can we control it ?
+2) 
+
+
+
+(Round 2)
+1) On a 32 bit JVM, how will you deal with OutofMemoryError.
+   i.e. if you face OfMError, what we do about it ? How much RAM would you increase ?
+   have you ever seen GC Logs to check memory ?
+2) Questions around immutable class.
+3) If a response is around 500 MB, how would u design an application if there are 
+   10 simultaneous requests on the same node.
+   We need to even consider all 10 requests should not suffer time lag.Once again
+   consider 32 bit JVM.
+4) What do you prefer is a better response structure xml or json? 
+5) Explan Java GC
+5) 
+   
+
+
+
+
+
+(Need to check memory considerations on a 32 bit JVM)
+
+---------------------------------------------------------------------------------------------------------
+Citi Telephonic (2nd)
+
+What is class loader.
+What class loader does spring use.
+What is database partioning.
+What are materialized views.
+How does class loader work ?
+if i have 2 classes with same package structure and name in JVM i.e. one from a jar
+and one in my project what would happen ?
+What are the different ways to instantiate a class ?
+	new
+	Serialization
+	clone
+	Class-Loader ?
+What is 2 phase commit ?
+How to have a transaction around 2 tables in different databases.
+
