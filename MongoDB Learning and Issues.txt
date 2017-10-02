@@ -1,0 +1,41 @@
+db is a global variable in Mongodb, and it represents the current database assigned.
+We can find the current database by simply typing db on the shell.
+Also to change database , use <DB_NAME> can be used.
+
+
+
+
+-----------------------------------------------------------------------------------------------------------
+Things to check
+
+Subcollections are nested collections,and is highly recommended. Need to check on this
+
+
+-----------------------------------------------------------------------------------------------------------
+Imp Commands
+
+mongod --dbpath <path>		This will start the server with the files to be placed in path.MondoDB by default
+				has dbpath set to C:\data\db, if not specified it will try to place files under
+				the path and will not start if the path does not exist.
+				
+mongo				This will connect to the mongo server and enter into Mongo shell.
+
+-----------------------------------------------------------------------------------------------------------
+
+Issues and resolution
+
+1)	Sometimes upon unclean exit,mongodb would not start again and fails with error
+'Unclean shutdown detected.' in the log. This is because in the working directory
+mongodb maintains a file called mongod.lock , this has size of some KB when mongodb
+starts and no size on a clean exit. The above error is most probably because the
+file has some size. Use the below to resolve this.
+
+Remove the file mongod.lock and run 'mongod --dbpath C:\mongodb\data\db\ --repair',
+this should resolve the error if not visit 'https://docs.mongodb.org/manual/tutorial/recover-data-following-unexpected-shutdown/'
+
+
+2) Duplicate Fields : Though the book says that mongodb does not allow duplicate field names in a document,yet
+			i was able to insert dupes. Mongo documentation does also have a lots of ifs and but
+			around this topic. Need to check. 'https://docs.mongodb.org/v3.0/core/document/'
+
+
