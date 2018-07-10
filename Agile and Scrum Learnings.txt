@@ -1,3 +1,4 @@
+
 ------------------------------ Problem with Traditional Waterfall approach ----------------------------
 
 Move on to next phase only when current phase is completely done.
